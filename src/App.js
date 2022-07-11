@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     (async function () {
-      const { text } = await( await fetch(`/api/message`)).json();
+      const  text  = await fetch(`https://mango-flower-0782f3800.1.azurestaticapps.net/api/HttpTrigger1?name=123`);
       setData(text);
     })();
   });
